@@ -5,4 +5,28 @@ format: html
 editor: visual
 ---
 
-## 
+## Conditional statements
+
+```{r}
+temperature <- 95
+
+if (temperature > 97) {
+  print("Temperature warning")
+}else 
+  print("Temperature is within the norm")
+```
+
+### Create ab if statement for blue whales lengths, lenght = 40 m. Add an if else statement that returns "GIANT" if the legnth > 35, "MEDIUM", between 20 and 35, "SMALL" if < = 20 
+```{r}
+
+whale_length_m <- 35
+
+if (whale_length_m > 35) {
+  print("GIANT")
+}else if(whale_length_m > 20 & whale_length <= 35)
+  {print("MEDIUM")
+}else if (whale_length_m <= 20)
+  print("SMALL")
+
+```
+
